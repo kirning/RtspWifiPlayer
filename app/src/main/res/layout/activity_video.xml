@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="net.kirno.videodemo.VideoActivity">
+
+    <EditText
+        android:id="@+id/edit_uri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rtsp://218.204.223.237:554/live/1/66251FC11353191F/e7ooqwcfbqjoo80j.sdp"
+        android:inputType="textUri" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="play"/>
+    <Button
+        android:id="@+id/btn_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="播放列表"/>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_above="@id/btn"
+        android:layout_width="match_parent"
+        android:layout_below="@id/edit_uri"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
